@@ -1,0 +1,18 @@
+<table>
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Age</th>
+      <th>Mood</th>
+    </tr>
+  </thead>
+  <tbody>
+    <% people.each do |person| %>
+      <tr>
+        <td><%= link_to person.name, person %></td>
+        <td><%= person.age %></td>
+        <td><%= person.mood %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>

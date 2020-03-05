@@ -1,0 +1,8 @@
+<h1><%= @person.name %></h1>
+ 
+<p>Mood: <%= @person.mood %></p>
+<p>Age: <%= @person.age %></p>
+ 
+<%= render 'form', person: @person %>
+
+<%= link_to "Destroy", @person, method: :delete, data: {confirm: "Are you sure?" } %>
